@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"/>
+<head>
+
+  <link rel="stylesheet" href="mvp/mvp.css">
+  <title>NPZ Resource Map</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"
+  integrity="sha512-rKFvwjvE4liWPlFnvH4ZhRDfNZ9FOpdkD/BU5gAIA3VS3vOQrQ5BjKgbO3kxebKhHdHcNUHLqxQYSoxee9UwgA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+  <style>
+      #map
+      {
+        width:600px;
+        height:600px;
+      }
+
+      #resources
+      {
+        max-height:600px;
+        overflow:scroll;
+      }
+
+      .leaflet-control-layers-selector
+      {
+        margin-bottom:0px;
+      }
+
+      hr
+      {
+        margin:5px;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nashville Promise Zone Resource Map</h1>
+  </header>
+  <section id="guide">
+    <aside id="map"></aside>
+    <aside id="resources"><h1>Resource List</h1><div id="list"></div></aside>
+ </section>
+   <script src="NPZCensusTracts.js"></script>
+   <script src="makeMap.js"></script>
+</body>
+</html>
