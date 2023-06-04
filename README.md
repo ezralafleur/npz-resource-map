@@ -1,5 +1,4 @@
 # NPZ Resource Map
-[Try me!](https://aton.al/npz-resource-map)
 
 A resource map serving as a companion to the Nashville Promise Zone Resource Guide.
 <img src='example.png' width=500/>
